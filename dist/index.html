@@ -12,25 +12,34 @@
     <link rel="stylesheet" href="/scss/main.css">
 </head>
 <body>
-    <main>
-        <h1>Responsive Weather App Powered by the open Weather A P I </h1>
-        <section id="searchBar" class="searchBar">
+    <main class="fade-in">
+        <h1 class="offscreen">Responsive Weather App Powered by the open Weather A P I </h1>
+        <section id="searchBar" class="searchBar fade-in">
             <form id="searchBar__form" class="searchBar__form" role="search">
-                <label for="searchBar__text">Enter a new location</label>
+                <label for="searchBar__text" class="offscreen">Enter a new location</label>
                 <input id="searchBar__text" class="searchBar__text" type="text" role="searchbox" size="40" autocomplete="off" placeholder="City, State, Country">
-                <button id="searchBar__button" class="searchBar__button" title="Submit Location" aria-label="Enter Zip Code or City, State, and Country to retrieve weather conditions">
+                <button id="searchBar__button" class="searchBar__button button" title="Submit Location" aria-label="Enter Zip Code or City, State, and Country to retrieve weather conditions">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-solid fa-rotate fa-spin none"></i>
                 </button>
             </form>
         </section>
         <a href="#currentForecast" class="skip-link">Skip to Current Conditions</a>
-        <section id="currentForecast" class="currentForecast" role="region" aria-labelledby="currentForecast__location">
+        <section id="currentForecast" class="currentForecast fade-in" role="region" aria-labelledby="currentForecast__location">
             <h2 id="currentForecast__location" class="currentForecast__location">Current Conditions</h2>
-            <div id="currentForecast__conditions" class="currentForecast__conditions"></div>
+            <div id="currentForecast__conditions" class="currentForecast__conditions">
+                <div class="icon" id="icon"><i class="far fa-sun" aria-hidden="true" title="clear sky"></i></div>
+                <div class="temp">59<div class="unit">F</div></div>
+                <div class="desc">Clear Sky</div>
+                <div class="feels">Feels Like 53</div>
+                <div class="maxtemp">High 62</div>
+                <div class="mintemp">Low 39</div>
+                <div class="humidity">Humidity 44%</div>
+                <div class="wind">Wind 7 mph</div>
+            </div>
         </section>
         <a href="#dailyForecast" class="skip-link">Skip to Six Day Forecast</a>
-        <nav id="navButtons" class="navButtons">
+        <nav id="navButtons" class="navButtons fade-in">
             <button id="getLocation" class="button" title="Get Location" aria-label="Get the current weather conditions for your current location">
                 <i class="fas fa-map-marker-alt"></i>
                 <i class="fa-solid fa-rotate fa-spin none"></i>
@@ -52,9 +61,9 @@
                 <i class="fa-solid fa-rotate fa-spin none"></i>
             </button>
         </nav>
-        <hr>
-        <section id="dailyForecast" class="dailyForecast" role="region" aria-labelledby="dailyForecast__title">
-            <h2 id="dailyForecast__title" class="dailyForecast__title">Six Day Forecast</h2>
+        <hr class="fade-in">
+        <section id="dailyForecast" class="dailyForecast fade-in" role="region" aria-labelledby="dailyForecast__title">
+            <h2 id="dailyForecast__title" class="dailyForecast__title offscreen">Six Day Forecast</h2>
             <div id="dailyForecast__contents" class="dailyForecast__contents"></div>
         </section>
         <p id="confirmation" class="offscreen" aria-live="assertive"></p>
