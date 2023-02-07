@@ -6,7 +6,7 @@ export default class CurrentLocation {
         this._unit = "imperial";
     }
 
-    getNaume () {
+    getName () {
         return this._name;
     }
 

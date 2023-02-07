@@ -11,3 +11,9 @@ export const setLocationObject = (locationObj, coordsObj) => {
 export const getHomeLocation = () => {
     return localStorage.getItem("defaultWeatherLocation");
 };
+
+export const cleanText = (text) => {
+    const regex = / {2,}/g;
+    const entryText = text.replaceAll(regex, " ").trim();
+    return entryText;
+};
