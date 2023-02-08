@@ -1,0 +1,23 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sepehr-samarzadeh/Weather-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sepehr-samarzadeh/Weather-App/issues"
+  },
+  "homepage": "https://github.com/Sepehr-samarzadeh/Weather-App#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  }
+}
